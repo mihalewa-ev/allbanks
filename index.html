@@ -65,19 +65,49 @@
     </header>
     <main class="main container">
         <section id="hero" class="hero">
-            <div class="container">
-                <div class="hero-contant flex">
-                    <h1 class="hero-title flex">
-                        Самые актуальные курсы валют
+            <div class="container slider">
+                <div class="hero-contant-1 flex item">
+                    <h1 class="hero-title slideText">
+                        Самые актуальные<br>курсы валют
                     </h1>
                     <div class="hero-contant-btn">
                         <button class="hero-contant-btn-link"> 
-                            24/7
+                            Узнать подробности
                         </button>
                     </div>
                 </div>
+                <div class="hero-contant-2 flex item">
+                    <h1 class="hero-title slideText">
+                        Лучшие предложения<br>по кредитованию
+                    </h1>
+                    <div class="hero-contant-btn">
+                        <button class="hero-contant-btn-link"> 
+                            Узнать подробности
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-contant-3 flex item">
+                    <h1 class="hero-title slideText">
+                        Выгодные условия<br>для микрозаймов
+                    </h1>
+                    <div class="hero-contant-btn">
+                        <button class="hero-contant-btn-link"> 
+                            Узнать подробности
+                        </button>
+                    </div>
+                </div>
+                <a class="prev" onclick="minusSlide()">&#10094;</a>
+                <a class="next" onclick="plusSlide()">&#10095;</a>
             </div>
-        </section>
-    </main>    
+            <div class="slider-dots">
+                <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+                <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+                <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+            </div>
+        </section>        
+    </main> 
+    <script src="./script.js"></script>
 </body>
 </html>
+
+

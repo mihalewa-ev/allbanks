@@ -116,6 +116,7 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 4px;
+    border: 1px solid #FEF1E2;
 }
 
 .dropdown-content a {
@@ -137,41 +138,99 @@ body {
 
 /*hero-contant*/
 
-.hero {
+.hero-contant-1 {
     padding-top: 105px;
     padding-bottom: 183px;
-    background-image: url("/images/main/main-banner.png");
-    background-size: 70%;
+    background-image: url("/images/main/main-banner.jpg");
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: left;
     background-color: #EFCED9;
     border-radius: 15px;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
 }
 
-.hero-contant {
+.hero-contant-2 {
+    padding-top: 105px;
+    padding-bottom: 183px;
+    background-image: url("/images/main/main-banner-1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #CFDEF0;
+    border-radius: 15px;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.hero-title {
+.hero-contant-3 {
+    padding-top: 105px;
+    padding-bottom: 183px;
+    background-image: url("/images/main/main-banner-2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #FEF1E2;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.hero-contant-btn-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000;
+    padding: 16px 30px;
+    background-color: #F8F8F8;
+    border: none;
+    margin-top: 58px;
+    margin-right: 82px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.slider {
+    position: relative;
+}
+
+.slideText {
     font-style: normal;
     font-weight: 400;
     font-size: 44px;
     color: #fff;
     margin-right: 82px;
-    max-width: 432px;
+    max-width: 1200px;
+    text-align: right;
+    align-items: flex-end;
+}
+
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;    
+    top: 50%;
+    max-width: 1100px;
+    margin-top: -52px;
+    padding: 32px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.item {
     text-align: right;
 }
 
-.hero-contant-btn-link {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    color: #fff;
-    padding: 16px 30px;
-    background-color: #EAACC1;
-    border: none;
-    margin-top: 58px;
-    margin-right: 82px;
-    border-radius: 4px;
+.next {
+    margin-right: 16px;
 }
