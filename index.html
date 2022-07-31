@@ -12,7 +12,7 @@
     <header class="header">
         <div class="header-container container flex">
             <a href="#" class="header-logo">
-                <img src="images/main/logo.svg" alt="logotype">
+                <img src="images/logo.svg" alt="logotype">
             </a>
             <nav class="header-nav">
                 <ul class="header-list flex">
@@ -26,11 +26,27 @@
                             <a href="#">Jysan Bank</a>
                         </div>
                     </li>
-                    <li class="header-list-item">
-                        <a href="#" class="header-list-item">Курсы в банках</a>
+                    <li class="header-list-item dropdown">
+                        <button class="dropbtn">
+                            Курсы в банках
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Курсы валют в банках</a>
+                            <a href="#">Курс в обменниках Алматы</a>
+                            <a href="#">Курсы валют НБК</a>
+                            <a href="#">Обменники Тараза</a>
+                        </div>
                     </li>
-                    <li class="header-list-item">
-                        <a href="#" class="header-list-item">Обменники</a>
+                    <li class="header-list-item dropdown">
+                        <button class="dropbtn">
+                            Обменники
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Обменники Алматы</a>
+                            <a href="#">Обменники Нур-Султана</a>
+                            <a href="#">Обменники Караганды</a>
+                            <a href="#">Обменники Тараза</a>
+                        </div>
                     </li>
                     <li class="header-list-item">
                         <a href="#" class="header-list-item">НБК</a>
@@ -104,8 +120,260 @@
                 <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
                 <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
             </div>
-        </section>        
+        </section>
+        <section class="article container flex">
+            <div class="article-items flex">
+                <div class="article-item-1">
+                    <p class="article-text">Курсы валют</p>
+                </div>
+                <div class="article-item-2">
+                    <p class="article-text">Микрозаймы</p>
+                </div>
+                <div class="article-item-3">
+                    <p class="article-text">Кредиты</p>
+                </div>
+                <div class="article-item-4">
+                    <p class="article-text">Депозиты</p>
+                </div>
+                <div class="article-item-5">
+                    <p class="article-text">Новости</p>
+                </div>
+                <div class="article-item-6">
+                    <p class="article-text">Банки РК</p>
+                </div>
+            </div>
+        </section>
+        <section class="article-rates container">
+            <div class="rates-items flex">
+                <div class="rates-title">
+                    <h2>Лучшие курсы валют</h2>
+                </div>
+                <div class="rates-city">
+                    <select class="choose-city">
+                        <option class="city">Алматы</option>
+                        <option class="city">Нур-Султан</option>
+                        <option class="city">Караганда</option>
+                        <option class="city">Тараз</option>
+                    </select>
+                </div>
+                <div class="choose-place-1">
+                    Обменники
+                </div>
+                <div class="choose-place-2">
+                    Банки
+                </div>
+            </div>
+        </section>
+        <section class="rates-items container">
+            <div class="rates-items-all flex">
+                <div class="usd flex">
+                    <div class="value icon-1 flex">
+                        <div class="value-descr">USD</div>
+                        <div class="value-rate">Доллар</div>
+                    </div>
+                    <div class="items-1">
+                        <div class="buy-descr">
+                            Покупка
+                        </div>
+                        <div class="buy-price">
+                            430.50
+                        </div>
+                    </div>
+                    <div class="items-2">
+                        <div class="sell-descr">
+                            Продажа
+                        </div>
+                        <div class="sell-price">
+                            437.50
+                        </div>
+                    </div>
+                </div>
+                <div class="eur flex">
+                    <div class="value icon-2 flex">
+                        <div class="value-descr">EUR</div>
+                        <div class="value-rate">Евро</div>
+                    </div>
+                    <div class="items-1">
+                        <div class="buy-descr">
+                            Покупка
+                        </div>
+                        <div class="buy-price">
+                            470.50
+                        </div>
+                    </div>
+                    <div class="items-2">
+                        <div class="sell-descr">
+                            Продажа
+                        </div>
+                        <div class="sell-price">
+                            499.50
+                        </div>
+                    </div>
+                </div>
+                <div class="rub flex">
+                    <div class="value icon-3 flex">
+                        <div class="value-descr">RUB</div>
+                        <div class="value-rate">Рубли</div>
+                    </div>
+                    <div class="items-1">
+                        <div class="buy-descr">
+                            Покупка
+                        </div>
+                        <div class="buy-price">
+                            345.50
+                        </div>
+                    </div>
+                    <div class="items-2">
+                        <div class="sell-descr">
+                            Продажа
+                        </div>
+                        <div class="sell-price">
+                            400.50
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="banks-cards container">
+            <div class="cards-title">
+                <h2>Лучшие кредитные предложения</h2>
+            </div>
+            <div class="card-container flex">
+            <div class="sber-card flex">
+                <div class="card-title">
+                    <img src="/images/sberbank.svg">
+                </div>
+                <div class="card-descr flex">
+                    <div class="descr-1 flex">
+                        <div class="item-card-1">
+                            Сумма: <b>8 000 000</b>
+                        </div>
+                        <div class="item-card-2">
+                            Срок: <b>60 мес.</b>
+                        </div>
+                    </div>
+                    <div class="descr-2 flex">
+                        <div class="item-card-3">
+                            Ставка: <b>8,00 %</b>
+                        </div>
+                        <div class="item-card-4">
+                            Время ответа: <b>30 мин.</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-link">
+                    Получить кредит
+                </div>
+            </div>
+            <div class="kaspi-card flex">
+                <div class="card-title">
+                    <img src="/images/kaspi.svg">
+                </div>
+                <div class="card-descr flex">
+                    <div class="descr-1 flex">
+                        <div class="item-card-1">
+                            Сумма: <b>6 000 000</b>
+                        </div>
+                        <div class="item-card-2">
+                            Срок: <b>36 мес.</b>
+                        </div>
+                    </div>
+                    <div class="descr-2 flex">
+                        <div class="item-card-3">
+                            Ставка: <b>4,00 %</b>
+                        </div>
+                        <div class="item-card-4">
+                            Время ответа: <b>20 мин.</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-link">
+                    Получить кредит
+                </div>
+            </div>
+            <div class="rbk-card flex">
+                <div class="card-title">
+                    <img src="/images/RBK.svg">
+                </div>
+                <div class="card-descr flex">
+                    <div class="descr-1 flex">
+                        <div class="item-card-1">
+                            Сумма: <b>3 000 000</b>
+                        </div>
+                        <div class="item-card-2">
+                            Срок: <b>12 мес.</b>
+                        </div>
+                    </div>
+                    <div class="descr-2 flex">
+                        <div class="item-card-3">
+                            Ставка: <b>12,00 %</b>
+                        </div>
+                        <div class="item-card-4">
+                            Время ответа: <b>15 мин.</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-link">
+                    Получить кредит
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="contacts container flex">
+            <div class="phone">
+                <a href="tel:+77075789999" class="phone">+7 (707) 578-99-99</a>
+            </div>
+            <div class="social flex">
+                <div class="facebook">
+                    <img src="/images/facebook.svg">
+                </div>
+                <div class="twitter">
+                    <img src="/images/twitter.svg">
+                </div>
+            </div>
+        </section>
+        <section class="footer-nav container flex">
+            <ul class="footer-nav-items flex">
+                <li class="footer-nav-link">
+                    Банки Казахстана
+                </li>
+                <li class="footer-nav-link">
+                    Курсы в банках
+                </li>
+                <li class="footer-nav-link">
+                    Обменники
+                </li>
+                <li class="footer-nav-link">
+                    НБК
+                </li>
+                <li class="footer-nav-link">
+                    Кредиты
+                </li>
+                <li class="footer-nav-link">
+                    Микрозаймы
+                </li>
+                <li class="footer-nav-link">
+                    Вклады физлиц
+                </li>
+                <li class="footer-nav-link">
+                    Новости
+                </li>
+            </ul>
+        </section>
     </main> 
+    <footer class="footer">
+        <div class="footer-items container flex">
+            <div class="footer-logo">
+                <img src="images/logo.svg" alt="logotype">
+            </div>
+            <div class="footer-rights">
+                © 2010-2022 AllBanks.kz
+            </div>
+            <div class="footer-descr">
+                При использовании материалов гиперссылка на AllBanks.kz обязательна
+            </div>
+        </div>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>

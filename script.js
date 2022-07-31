@@ -38,3 +38,14 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+document.querySelector('div.choose-place-2').addEventListener("click", function(){
+    document.querySelector('div.choose-place-2').setAttribute('class', 'choose-place-1')
+    document.querySelector('div.choose-place-1').setAttribute('class', 'choose-place-2');
+})
+
+document.querySelector('div.choose-place-1').addEventListener("click", function(){
+    document.querySelector('div.choose-place-1').setAttribute('class', 'choose-place-2')
+    document.querySelector('div.choose-place-2').setAttribute('class', 'choose-place-1');
+})
+
